@@ -1,0 +1,18 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    width: 30%;
+    background: brown;
+    padding: 50px;
+    border: 2px blue solid;
+    border-radius: 10px;
+}
+
+.img-fluid {
+    height: 80px;
+    width: 180px;
+}
