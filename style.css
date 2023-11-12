@@ -2,17 +2,94 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
+
+body{
+    
+    color: white;
+}
+
+.form-control::placeholder { 
+    color: rgb(101, 104, 110);
+    text-align: center;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(14, 16, 25), rgb(68, 35, 94));
+} 
 
 .container-fluid {
     width: 30%;
-    background: brown;
-    padding: 50px;
-    border: 2px blue solid;
+    backdrop-filter: blur(20px);
+    background-color: ;
+    padding: 20px 20px;
+    border: 1px aqua solid;
     border-radius: 10px;
 }
 
 .img-fluid {
-    height: 80px;
-    width: 180px;
+    height: 60px;
+    width: 140px;
+}
+
+
+.form-control:focus{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    text-align: center;
+}
+
+.form-control {
+    color: white;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid aqua;
+    border-radius: 4px 4px 0px 0px;
+    box-shadow: none;
+    text-align: center;
+}
+
+
+
+.form-text {
+    color: antiquewhite; opacity: 0.6;
+}
+
+.btn {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 25px;
+    margin: 20px;
+    background-color: blue;
+    font-size: smaller;
+}
+
+.text-green {
+    color: aqua;
+    font-size: smaller;
+}
+
+label {
+    font-size: small;
+}
+
+.pp {
+    font-size: small;
+}
+
+.text-white {
+    font-size: small;
+}
+
+@media screen and (max-width:800px) {
+    .container-fluid {
+        width: 90%;
+        margin: 10% auto;
+    }
 }
