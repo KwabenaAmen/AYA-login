@@ -75,7 +75,7 @@
 
       <script>
 
-              // Example starter JavaScript for disabling form submissions if there are invalid fields
+      // disable form submissions if there are invalid fields
       (() => {
         'use strict'
 
@@ -86,8 +86,11 @@
         Array.from(forms).forEach(form => {
           form.addEventListener('submit', event => {
             if (!form.checkValidity()) {
+              alert('Oops! Provide a valid username and password to log in')
               event.preventDefault()
               event.stopPropagation()
+            }else{
+              alert('User has been logged in!')
             }
 
             form.classList.add('was-validated')
