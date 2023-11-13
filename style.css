@@ -1,9 +1,4 @@
-.{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-}
 
 body{
     
@@ -96,6 +91,38 @@ label {
 .text-white {
     font-size: small;
 }
+
+.popup {
+    background: white;
+    border: 1px solid;
+    border-radius: 10px;
+    color: black;
+    width: 300px;
+    padding: 0 30px 30px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-Popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 25px;
+    margin: 20px;
+    background-color: blue;
+    font-size: smaller;
+    color: white;
+}
+
 
 @media screen and (max-width:800px) {
     .container-fluid {
