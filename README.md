@@ -10,3 +10,6 @@
 - Styling
     - Bootstrap
     - Fontawesome
+
+- The deployed Login page can be found here: https://ayadata-simplelogin.netlify.app/
+
